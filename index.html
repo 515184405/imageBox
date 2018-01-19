@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>template</title>
+    <link rel="stylesheet" type="text/css" href="common/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="static/index/index.css">
+    <script type="text/javascript" src='common/layui/jquery.min.js'></script>
+    <script type="text/javascript" src='common/layui/layui.js'></script>
+    <script type="text/javascript" src='common/common.js'></script>
+</head>
+<body id="body-container">
+    <div class="header animation">
+        <div class="layui-row">
+            <div class="layui-col-md3">
+                <img src="//icon.qiantucdn.com/static/images/header_v1.0/logo1.2.png" height="35" alt="千图网">
+            </div>
+            <div class="layui-col-md6">
+                <ul class="layui-nav t-c layui-bg-fff" lay-filter="">
+                    <li class="layui-nav-item"><a href="">最新活动</a></li>
+                    <li class="layui-nav-item layui-this"><a href="">产品</a></li>
+                    <li class="layui-nav-item"><a href="">大数据</a></li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+                        <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                            <dd>
+                                <a href="">
+                                    <i class="layui-icon iconFont">&#xe756;</i>
+                                    <p>移动模块</p>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i class="layui-icon iconFont">&#xe735;</i>
+                                    <p>后台模版</p>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="">
+                                    <i class="layui-icon iconFont">&#xe658;</i>
+                                    <p>电商平台</p>
+                                </a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="">社区</a></li>
+                </ul>
+            </div>
+            <div class="layui-col-md3 t-r">
+                <p class="icon-style"><i class="layui-icon">&#xe735;</i></p>
+                <p class="icon-style"><i class="layui-icon">&#xe67c;</i></p>
+                <button class="layui-btn layui-btn-lg layui-btn-primary border-radius5">登陆</button>
+                <button class="layui-btn layui-btn-lg border-radius5 btnBgColor">注册</button>
+            </div>
+        </div>
+    </div>
+    <div class="search" id="tab-style-1">
+        <div class="layui-tab layui-scroll layui-tab-brief" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title search-list search-tab">
+                <li data-tab="1" class="layui-this">网站设置</li>
+                <li data-tab="2">用户管理</li>
+                <li data-tab="3">权限分配</li>
+                <li data-tab="4">商品管理</li>
+                <li data-tab="5">订单管理</li>
+            </ul>
+            <div class="layui-tab-content layui-relative">
+                    <div class="layui-form select-search">
+                        <select id="search-select" name="list" lay-verify="required" lay-filter="select-filter">
+                            <option selected value="1">网站设置</option>
+                            <option value="2">用户管理</option>
+                            <option value="3">权限分配</option>
+                            <option value="4">商品管理</option>
+                            <option value="5">订单管理</option>
+                        </select>
+                    </div>
+                <div class="search-box layui-row">
+                    <input id="search-input" type="search" class="search-input left"/>
+                    <button id="searchBtn" class="search-btn left"><i class="layui-icon" style="font-size: 35px;color:#fff">&#xe615;</i></button>
+                </div>
+                <div class="layui-tab-item layui-show">
+                    <ul>
+                        <li>1111111111</li>
+                        <li>1111111111</li>
+                        <li>1111111111</li>
+                        <li>1111111111</li>
+                    </ul>
+                </div>
+                <div class="layui-tab-item">
+                    <ul>
+                        <li>222222</li>
+                        <li>222222</li>
+                        <li>222222</li>
+                        <li>222222</li>
+                    </ul>
+                </div>
+                <div class="layui-tab-item">
+                    <ul>
+                        <li>3333333333</li>
+                        <li>3333333333</li>
+                        <li>3333333333</li>
+                        <li>3333333333</li>
+                        <li>3333333333</li>
+                    </ul>
+                </div>
+                <div class="layui-tab-item">
+                    <ul>
+                        <li>4444444444</li>
+                        <li>4444444444</li>
+                        <li>4444444444</li>
+                        <li>4444444444</li>
+                    </ul>
+                </div>
+                <div class="layui-tab-item">
+                    <ul>
+                        <li>555555555555555</li>
+                        <li>555555555555555</li>
+                        <li>555555555555555</li>
+                        <li>555555555555555</li>
+                        <li>555555555555555</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hot-search">
+                <span>热门搜索 :</span>
+                <a href='#'>年终大促</a>
+                <a href='#'>年货节</a>
+                <a href='#'>大寒</a>
+                <a href='#'>春节</a>
+                <a href='#'>新年</a>
+                <a href='#'>年会</a>
+                <a href='#'>PPT模板</a>
+                <a href='#'>个人简历</a>
+                <a href='#'>腊八节</a>
+                 <a href='#'>海报</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--公共头部结束-->
+
+
+    <div class="layui-carousel" id="test1">
+        <div carousel-item>
+            <div>条目1</div>
+            <div>条目2</div>
+            <div>条目3</div>
+            <div>条目4</div>
+            <div>条目5</div>
+        </div>
+    </div>
+
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

@@ -1,0 +1,382 @@
+
+@color :#a7e3f5 ;
+@hColor : #c0ebf7;
+
+.btnBgColor{
+  background-image: -webkit-gradient(linear,left top,right top,from(#a7e3f5),to(#6ed4f1));
+  background-image: -webkit-linear-gradient(left,#a7e3f5,#6ed4f1);
+  background-image: linear-gradient(to right,#a7e3f5,#6ed4f1);
+  //FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1, startColorStr=#a7e3f5, endColorStr=#6ed4f1);
+  border: 0;
+}
+
+.t-r{
+  text-align: right;
+}
+.t-l{
+  text-align: left;
+}
+.t-c{
+  text-align: center;
+}
+.left{
+  float:left;
+}
+.layui-relative{
+  position: relative;
+}
+.layui-input{
+  color:#666;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+  background-color: @hColor;
+}
+.layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+  top:80px;
+}
+.layui-nav-tree .layui-nav-itemed:after{
+  top:80px;
+}
+.layui-btn:hover{
+  -webkit-box-shadow:0 0 10px rgba(192,235,247, .5);
+  -moz-box-shadow:0 0 10px rgba(192,235,247, .5);
+  box-shadow:0 0 20px rgba(192,235,247, .5);
+}
+.layui-nav .layui-nav-item{
+  line-height: 70px;
+}
+.layui-nav.layui-bg-fff{
+  background-color: #fff;
+  a{
+    color:#595757;
+    &:hover{
+      color:#111;
+    }
+  }
+}
+.layui-nav-bar {
+  &:before {
+    content: '';
+    position: absolute;
+    left:50%;
+    bottom:5px;
+    border-bottom:10px solid @hColor;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    margin-left:-10px;
+  }
+}
+//修改原二级菜单样式
+.layui-nav-child{
+  position: fixed;
+  top:71px;
+  border:0;
+  dd{
+    display: inline-block;
+    padding:10px 0;
+    a{
+      padding: 20px!important;
+    }
+  }
+}
+.iconFont{
+  font-size: 35px!important;
+  color: @color;
+}
+.icon-style{
+  display: inline-block;
+  width:30px;
+  margin-right:30px;
+  text-align: center;
+  line-height: 30px;
+  margin-top:1px;
+  cursor: pointer;
+  color: @color;
+  .layui-icon{
+    font-size: 25px!important;
+  }
+}
+.border-radius5{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.header{
+  position: relative;
+  left:0;
+  top:0px;
+  padding:0 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width:100%;
+  line-height: 70px;
+  background-color: #fff;
+  border-bottom:1px solid #eee;
+  overflow: hidden;
+  .layui-nav *{
+    font-size: 16px;
+  }
+}
+.animation{
+  -webkit-animation: slideDown 0.4s ease-in;
+  -o-animation: slideDown 0.4s ease-in;
+  animation: slideDown 0.4s ease-in;
+}
+
+@keyframes slideDown{
+  0% {
+      top:-70px;
+  }
+  100%{
+      top:0;
+  }
+}
+//搜索模块
+.search{
+  width:1000px;
+  margin:50px auto;
+  background-color:#fff;
+}
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after{
+  border-bottom:10px solid @hColor;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+}
+.layui-tab-title{
+  height:60px;
+  border-bottom-style:none;
+  li{
+    font-size: 18px;
+    color:#595757;
+    line-height: 60px;
+  }
+  .layui-this{
+    color: @color!important;
+
+    &:after{
+      height:60px;
+    }
+  }
+}
+.layui-tab-content{
+  padding:0;
+}
+.search-box{
+  font-size: 0px;
+  .search-input{
+    padding:20px 0 20px 15px;
+    width:865px;
+    font-size: 16px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-right:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .search-btn{
+    width:135px;
+    height:62.5px;
+    cursor: pointer;
+    border:0;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 5px;
+  }
+}
+.layui-tab-item{
+  width:100%;
+  border-width: 1px;
+  border-style: solid;
+  border-top:none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  li{
+    line-height: 40px;
+    padding:0 20px;
+    color:#595757;
+  }
+}
+.search .layui-show{
+  display: none!important;
+}
+.search .layui-showImportant{
+  display: block!important;
+}
+//搜索样式
+#tab-style-1{
+  .search-input{
+    border-color:@color;
+  }
+  .search-btn{
+    background-color:@color;
+  }
+  .search-list .layui-this{
+    color:@color!important;
+    &:after{
+      border-bottom-color:@color!important;
+    }
+  }
+  .select-search{
+    border-color:@color;
+  }
+  .layui-show{
+    color:@color;
+  }
+}
+#tab-style-2{
+  .search-input{
+    border-color:#f1aa61;
+  }
+  .search-btn{
+    background-color:#f1aa61;
+  }
+  .search-list .layui-this{
+    color:#f1aa61!important;
+    &:after{
+      border-bottom-color:#f1aa61!important;
+    }
+  }
+  .layui-show{
+    color:#f1aa61!important;
+  }
+  .select-search{
+    border-color:#f1aa61;
+  }
+}
+#tab-style-3{
+  .search-input{
+    border-color:#ffc000;
+  }
+  .search-btn{
+    background-color:#ffc000;
+  }
+  .search-list .layui-this{
+    color:#ffc000!important;
+    &:after{
+      border-bottom-color:#ffc000!important;
+    }
+  }
+  .layui-show{
+    color:#ffc000!important;
+  }
+  .select-search{
+    border-color:#ffc000;
+  }
+}
+#tab-style-4{
+  .search-input{
+    border-color:#7784e4;
+  }
+  .search-btn{
+    background-color:#7784e4;
+  }
+  .search-list .layui-this{
+    color:#7784e4!important;
+    &:after{
+      border-bottom-color:#7784e4!important;
+    }
+  }
+
+  .layui-show{
+    color:#7784e4!important;
+  }
+  .select-search{
+    border-color:#7784e4;
+  }
+}
+#tab-style-5{
+  .search-input{
+    border-color:#b5e477;
+  }
+  .search-btn{
+    background-color:#b5e477;
+  }
+  .search-list .layui-this{
+    color:#b5e477!important;
+    &:after{
+      border-bottom-color:#b5e477!important;
+    }
+  }
+  .layui-show{
+    color:#b5e477!important;
+  }
+  .select-search{
+    border-color:#b5e477;
+  }
+}
+
+//滚动超过一百之后搜索框的样式layui-scroll
+.select-search{
+  width:115px;
+  height:60.5px;
+  position: absolute;
+  left:2px;
+  top:1px;
+  border:none;
+  border-right-width:1px;
+  border-right-style: solid;
+  .layui-anim-upbit{
+    top:60.5px!important;
+    .layui-this{
+      background: @color!important;
+      color:#595757!important;
+    }
+  }
+  .layui-input{
+    height:60.5px;
+  }
+}
+.layui-scroll{
+  .search-input{
+    padding-left:130px;
+  }
+
+}
+.searchAbs{
+  position:fixed;
+  left:50%;
+  top:0;
+  z-index:10;
+  margin:0;
+  height:70px;
+  background-color: #fff;
+  margin-left:-300px;
+  width:600px;
+  .layui-tab{
+    margin:0;
+    margin-top:10px;
+  }
+  .search-box .search-input{
+    padding:15px 0 15px 15px;
+  }
+    .layui-tab-item{
+      background-color: #fff;
+    }
+  .search-box .search-btn{
+    height:52.5px;
+  }
+  .layui-input{
+    height:50.5px;
+  }
+  .select-search{
+    height:50.5px;
+  }
+}
+.hot-search{
+  margin-top:10px;
+  span{
+    color:#666;
+  }
+  a{
+    padding-right:15px;
+    color:#888;
+    &:nth-of-type(2n){
+      color:@color;
+    }
+  }
+}
+
